@@ -1,109 +1,155 @@
-.head-logo img{
-	width: 200px;
-	padding-bottom: 100px;
+html{
+   box-sizing: border-box; /*размеры заданых блоков не увеличиваються от внутренних отступов и от добавления бордэра*/
+	
+}
+*, *:after, *:before{
+   box-sizing: inherit;
 }
 body{
 
-	margin-left:5%;
-	margin-right:5%;
-	background-image: url(../images/image-background.gif); 
+	background-image: url(../images/background2.jpg); 
 	background-attachment: fixed; /* фиксирует задний фон */
 	background-size: 100%;	 
+	margin: 0;
+	
 }
+header{
 
-h1{
-  color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left:10%;
+	margin-right:10%;
+}
+header img{
+	width: 300px;
+
+}
+header>h1{
+	justify-content: center;
 	font-size: 50px;
-
-
+	color:black;
+	font-family: cursive;
+	text-shadow: 0 0 5px red, 0 0 10px orange, 0 0 15px yellow, 0 0 20px green, 0 0 25px aqua;
 }
-.table-1{
-	 width: 100%;
+main{
+	margin-left:10%;
+	margin-right:10%;
 }
-/* _____________________________NAV-MAIN_____________________________________________ */
-.nav-main{
-	
+
+ul.navigation{
 	display: flex;
-	list-style-type: none; 
-	padding-inline-start: 0; 
-	
-
+	justify-content: space-between;
+	padding-inline-start: 0px; 	
+	margin-block-start: 0px;
 }
-.nav-main li{
+ul.navigation li{
 	display: flex;
-	flex:1;  
+	flex: 1; /* резиновые кнопки */
 	margin: 2px;
-	width: 312px;
-	height: 80px;
 	flex-direction: column;  /* установил вертиль */
 	justify-content: center; /* в вертикальном положении justify-content утснавливает по середине сегмент */
 	text-align: center;  /* горизонтальное выравнивание */
+	border-radius: 20px 3px 20px 3px;
 }
-.nav-main li a{
-	font-size: 30px;
+ul.navigation li a{
+	padding: 10%;
+	font-variant: small-caps;
+	font-family: gabriola;
+	font-size: 40px;
 	text-decoration: none; /* убирает полоску */
-	color: white;
+	text-shadow: 1px 1px 10px red,  2px -2px 10px black, 0 0 40px red;
+	color: cyan;
 }
-/* _____________________________NAV-SELECT________________________________________ */
-	
-	.column{
-	width: 15%;
-	height: 600px;
-	vertical-align: top;
-}
-.main-box{
-	height: 26%;
-	position: relative;
-	margin: 10px;
+/* ________SELECT: NAV & CONTENT______________________ */	
+div.conteiner{
+	display: flex;
 }
 
-.main-box ul{
-	list-style-type: none;
+section.sidebar{
+margin-right: 10px;
+align-self: flex-start;   /*выравнивает бар (box) отдельности*/
+}
+
+ul.spisok-ul{
 	padding-inline-start: 0px; /* убираю отступ слева списка */
-	/* margin-block-start: 0px;   убирает отступ сверху margin-top: тоже самое*/
+	margin-block-start: 0px;
 }
 
-.spisok-ul li{
-	margin-bottom: 2px;
-	
+ul.spisok-ul li{
+	margin: 2px;
+	list-style-type: none; /*убирает точки списка*/
+	border-radius: 10px 10px 10px 10px;
 }
-.spisok-ul li a{
-	text-decoration: none;
-	padding-right:70px; 
-  font-size: 30px;
-	color: yellow;
+ul.spisok-ul li a{
+	text-decoration: none; /*убирает нижнее подчёркивание*/
+	font-family: gabriola;
+  	font-size: 30px;
+  	text-shadow: 0 0 10px #CE3345, 0 0 20px #CE3345, 0 0 20px #CE3345;
+	color: white;
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
-
-.div-reg{
-	width: 100%;
-	height: 200px;
-}
-
+/*_______REGISTRATION______________*/
  
-.box-fieldset legend{
-	 color: #4aa84a;
-	 font-size:30px;
+fieldset.box-fieldset legend{
+	font-family: "segoe print";
+	color: cyan;
+	font-size:30px;
+	text-shadow: 0 0 15px red, 0 0 10px pink;
 }
 
-.box-fieldset label{
+fieldset.box-fieldset label{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	color: red;
+}
+
+/*_________CONTENT____________________*/
+
+
+section.content{
 	
-}
-
-.content{
+	font-family: "MV BOLI",sans-serif;
 	font-size: 30px;
-	background-color: #a1a0b8;
+	background-color: rgba(13, 12, 12, 0.4);
 	padding: 30px;
-	width:90%;
-}
-.content h1{
-color: #4340a8;
-}
-.select {
-	width: 150px;
+	margin: 2px;
 }
 
+.content h2{
+	color: #CF605D;
+	text-shadow: 0 0 10px black;
+}
+.content {
+	font-weight: bolder;
+	font-variant: small-caps;
+	color: #8c8c8c;
+	text-shadow: 0 0 2px black 
+}
+
+footer{
+	left: 10%;
+	right: 10%;
+	bottom: 0;
+	height: 45px;
+	border-radius: 20px 20px 0 0;
+	background-color: rgba(13, 12, 12, 0.9);
+	box-shadow: 0 -3px 20px rgba(255, 0, 0, 0.5), 0 -3px 50px rgba(255, 0, 0, 0.5); 
+   background: rgba(13, 12, 12, 0.9);
+   padding: 10px 0;
+   position: fixed;
+   
+}
+
+
+
+ 
+.footer__icon img{
+	width: 30px;
+	margin-left: 10%;
+	transition: all .5s ease;
+}
