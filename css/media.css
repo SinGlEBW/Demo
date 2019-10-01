@@ -1,0 +1,89 @@
+@media screen and (max-width:1375px)
+{header>h1{
+	font-size: 40px;
+}
+ul.navigation li a{
+    width: 5em;
+    font-size: 30px;
+}
+/* ___SELECT: NAV & CONTENT____ */	
+ul.ul_list li a{
+    font-size: 24px;
+}
+/*__REGISTRATION__*/
+
+span{
+    font-size:19px;
+}
+input{
+    font-size: 10px;
+    margin-bottom: 1px;
+} 
+    input[type="checkbox"]{
+    width: 10px;
+        
+}
+	
+label{
+    width: 100%;
+    font-size: 11px;
+}
+/*___CONTENT___*/
+section.content{
+    font-size: 24px;
+}
+footer{
+    height: 35px;
+    padding: 7px 0;
+}
+.footer__icon img{
+	width: 25px;
+			
+}
+}
+
+
+
+@media screen and (max-width:1040px)
+{
+header>h1{
+	font-size: 30px;
+}
+ul.navigation li a{
+    width: 5em;
+    font-size: 22px;
+}
+/* ___SELECT: NAV & CONTENT___ */	
+ul.ul_list li a{
+    font-size: 17px;
+}
+/*___REGISTRATION___*/
+span{
+    font-size:13px;
+}
+input{
+    font-size: 7px;
+} 
+input[type="checkbox"]{
+    width: 7px;
+    margin: 0;
+}
+label{
+    width: 100%;
+    font-size: 8px;
+    padding-top: 2px;
+}
+   
+/*_____CONTENT____*/
+section.content{
+    font-size: 17px;
+}
+footer{
+    height: 25px;
+    padding: 4px 0;
+}
+.footer__icon img{
+    width: 20px;
+
+}
+}
