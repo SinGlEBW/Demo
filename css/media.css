@@ -262,10 +262,10 @@
 }
 
 @media screen and (max-width:450px) {
+
     body {
         background-attachment: fixed;
         background-size: 200%;
-
     }
 
     header > h1 {
@@ -295,4 +295,13 @@
         background-color: rgba(13, 12, 12, 0.4);
         padding: 3vw;
     }
+     
+ ul.navigation li a {
+        width: 4em;
+     font-size: 20px; 
+    }
+    
+    
+    
+    
 }
