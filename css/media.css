@@ -263,7 +263,6 @@
 
 @media screen and (max-width:450px) {
     body {
-
         background-attachment: fixed;
         background-size: 200%;
 
@@ -276,7 +275,7 @@
         font-family: cursive;
     }
 
-    header img {
+    header > img {
         width: 26%;
     }
 
@@ -293,9 +292,7 @@
 
     section.content {
         width: 95%;
-        font-size: 5vw;
         background-color: rgba(13, 12, 12, 0.4);
         padding: 3vw;
-
-
     }
+}
