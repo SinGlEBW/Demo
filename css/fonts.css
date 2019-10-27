@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Conv_Neucha-Regular';
+    src: url('/fonts/Neucha-Regular/Neucha-Regular.eot');
+    src: url('/fonts/Neucha-Regular/Neucha-Regular.woff') format('woff'),
+         url('/fonts/Neucha-Regular/Neucha-Regular.ttf') format('truetype'), 
+         url('/fonts/Neucha-Regular/Neucha-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gabriola';
+  src: url('/fonts/Gabriola/Gabriola.eot');
+  src: url('/fonts/Gabriola/Gabriola.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Gabriola/Gabriola.svg#Gabriola') format('svg'),
+       url('/fonts/Gabriola/Gabriola.ttf') format('truetype'),
+       url('/fonts/Gabriola/Gabriola.woff') format('woff'),
+       url('/fonts/Gabriola/Gabriola.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MV BOLI';
+  src: url('mvboli.eot');
+  src: url('/fonts/MVBoli/MVBoli.svg#MVBoli') format('svg'),
+       url('MVBoli.ttf') format('truetype'),
+       url('MVBoli.woff') format('woff'),
+       url('mvboli.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+

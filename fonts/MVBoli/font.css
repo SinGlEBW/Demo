@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'MVBoli';
+  src: url('MVBoli.svg#MVBoli') format('svg'),
+       url('MVBoli.ttf') format('truetype'),
+       url('MVBoli.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mvboli';
+  src: url('mvboli.eot');
+  src: url('mvboli.eot?#iefix') format('embedded-opentype'),
+       url('mvboli.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

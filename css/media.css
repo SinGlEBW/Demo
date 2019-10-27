@@ -173,6 +173,7 @@
 
     }
 
+
     header > h1 {
         font-size: 30px;
     }
@@ -226,6 +227,15 @@
     }
 
     /*___REGISTRATION___*/
+    
+    
+    
+    .forma_registration
+    {
+        
+    width: 45vw;
+    height: 50vh;
+    }
     span {
         font-size: 13px;
     }
@@ -262,10 +272,10 @@
 }
 
 @media screen and (max-width:450px) {
-
     body {
         background-attachment: fixed;
         background-size: 200%;
+
     }
 
     header > h1 {
@@ -279,15 +289,22 @@
         width: 26%;
     }
 
-    .navigation {
-        flex-flow: row wrap;
+    ul.navigation {
+        display: flex;
+        flex-wrap: wrap;
+
+        
     }
+
+
+
+
 
 
     ul.navigation li a {
         width: 4.8em;
         font-size: 20px;
-
+        border:1px solid red;
     }
 
     section.content {
@@ -295,13 +312,4 @@
         background-color: rgba(13, 12, 12, 0.4);
         padding: 3vw;
     }
-     
- ul.navigation li a {
-        width: 4em;
-     font-size: 20px; 
-    }
-    
-    
-    
-    
 }
