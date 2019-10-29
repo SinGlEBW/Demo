@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/media.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--чтоб IE использовал новые стандарты -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -52,10 +53,11 @@
 					</ul>	
                     
 					<div class="login_link"><!-- ___BOX OPEN_____ -->
+                   
 					   <h5> Личный кабинет</h5>
 						<form action="form_reg.php" method="post">
-				            <input class="login" type="text" name="login" placeholder="Введите логин:">
-				            <input class="login" type="password" name="password" placeholder="Введите пароль:">
+				            <input class="forma" type="text" name="login" required minlength = "4" maxlength = "10" placeholder="Введите логин:" >
+				            <input class="forma" type="password" name="password" required minlength = "6" maxlength = "16" placeholder="Введите пароль:">
 							<input class="submit_entrance" type = "submit" name = "submit_login" value="Вход">																								
 						</form>
 						
@@ -67,13 +69,19 @@
                                    <div class="wrapreg"> 
                                        <label for="check-2"><div class="close"></div></label> 
                                       <h4>Регистрация</h4>
-                                        <form action="form_reg.php">
-                                          <input class="formreg" class="logreg" type="text" name="logreg" placeholder="Логин:">
-                                          <input class="formreg" class="passreg" type="password" name="passreg" placeholder="Пароль:">
-                                          <input class="formreg" class="repeat-passreg" type="password" name="repeat-passreg" placeholder="Повторите пароль:">
-                                          <input class="formreg" class="emailreg" type="email" name="emailreg" placeholder="Email:">
-                                          <input class="formreg" class="check-3" type="submit" name="check-2" value="Зарегистрироваться" >
+                                        <form  class="formreg" action="form_reg.php" method="post">
+                                          <input class="forma" class="logreg" type="text" name="logreg" required minlength = "4" maxlength = "10" placeholder="Логин:">
+                                          <input class="forma" class="emailreg" type="email" name="emailreg" required placeholder="Email:">
+                                          <input class="forma" class="agereg" type="date" name="agereg" min="1950-01-01" max="2020-01-01">
+                                          <div 	 class="radio">
+                                          	<input class="male-m" id="male-m" type="radio" name="male-m"> <label class="l-radio" for="male-m">Мужской</label>
+                                         		<input id="male-w" type="radio" name="male-w" > <label class="l-radio" for="male-w">Женский</label>
+                                          </div>
+                                          <input class="forma" class="passreg" type="password" name="passreg" required minlength = "6" maxlength = "16" placeholder="Пароль:">
+                                          <input class="forma" class="repeat-passreg" type="password" name="repeat-passreg" required minlength = "6" maxlength = "16" placeholder="Повторите пароль:">
+                                          <input class="submit_reg" type="submit" name="submit_reg" value="Зарегистрироваться" >
                                         </form>
+                                         <p class="al-err"><?php $err=$GLOBALS['errors']; echo $err[0];?></p>
                                     </div>
                                 </div>		
 								
@@ -96,5 +104,10 @@
 	    <a class="footer__icon" href="#" ><img src="images/vk.png" alt="VK"></a>
 	    <a class="footer__icon" href="#" ><img src="images/youtube.png" alt="You Tube"></a>
 	</footer>
+	
+
+	
 </body>
 </html>
+
+

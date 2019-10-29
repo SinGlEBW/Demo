@@ -33,6 +33,11 @@
         width: 100%;
         font-size: 11px;
     }
+    .forma_registration {
+
+        width: 25vw;
+        height: 40vh;
+    }
 
     /*___CONTENT___*/
     section.content {
@@ -53,6 +58,13 @@
 
 
 @media screen and (max-width:1040px) {
+    header,main,footer {
+   
+    margin-left: 1%;
+    margin-right: 1%;
+    left: 2%;
+    right: 2%;
+}
     header > h1 {
         font-size: 30px;
     }
@@ -85,6 +97,12 @@
         width: 100%;
         font-size: 8px;
         padding-top: 2px;
+    }
+
+    .forma_registration {
+
+        width: 35vw;
+        height: 22vh;
     }
 
     /*_____CONTENT____*/
@@ -110,8 +128,10 @@
     footer {
         margin-left: 1%;
         margin-right: 1%;
-
+        left: 2%;
+        right: 2%;
     }
+    
 
     header > h1 {
         font-size: 30px;
@@ -146,6 +166,15 @@
         font-size: 8px;
         padding-top: 2px;
     }
+    .forma_registration {
+
+        width: 35vw;
+        height: 25vh;
+    }
+    .al-err{
+
+        font-size: 1.5vmax;
+    }
 
     /*_____CONTENT____*/
     section.content {
@@ -170,6 +199,8 @@
     footer {
         margin-left: 1%;
         margin-right: 1%;
+        left: 2%;
+        right: 2%;
 
     }
 
@@ -194,7 +225,7 @@
         position: relative;
         width: 80%;
         float: left;
-        transition: all 2s;
+        transition: all 1s;
     }
 
     .l__check {
@@ -227,15 +258,15 @@
     }
 
     /*___REGISTRATION___*/
-    
-    
-    
-    .forma_registration
-    {
-        
-    width: 45vw;
-    height: 50vh;
+
+
+
+    .forma_registration {
+
+        width: 35vw;
+        height: 30vh;
     }
+
     span {
         font-size: 13px;
     }
@@ -293,20 +324,66 @@
         display: flex;
         flex-wrap: wrap;
 
-        
+
     }
-
-
-
-
-
 
     ul.navigation li a {
         width: 4.8em;
         font-size: 20px;
-        border:1px solid red;
+        
+    }
+    .forma_registration {
+
+        width: 60vw;
+        height: 30vh;
     }
 
+    section.content {
+        width: 95%;
+        background-color: rgba(13, 12, 12, 0.4);
+        padding: 3vw;
+    }
+}
+
+@media screen and (max-width:330px) {
+    body {
+        background-attachment: fixed;
+        background-size: 200%;
+
+    }
+
+    header > h1 {
+        justify-content: center;
+        font-size: 8vw;
+        color: black;
+        font-family: cursive;
+    }
+
+    header > img {
+        width: 26%;
+    }
+
+    ul.navigation {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    ul.navigation li a {
+        width: 4.8em;
+        font-size: 20px;
+        
+    }
+    .forma_registration {
+
+        width: 60vw;
+        height: 35vh;
+    }
+.alert{
+
+    font-size: 3em;
+}
     section.content {
         width: 95%;
         background-color: rgba(13, 12, 12, 0.4);
