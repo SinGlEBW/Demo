@@ -1,0 +1,390 @@
+:root{
+--color: teal;
+}
+
+
+body {
+    background-image: url(../images/background1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: repeat;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+
+header>img {
+    width: 19%;
+}
+
+header > h1 {
+    justify-content: center;
+    font-size: 5vw;
+    color: indianred;
+    font-family: cursive;
+    text-shadow: .2vw .2vw .4vw black, -0.2vw -0.2vw 1vw black, -0.2vw 0 1vw black, 0.1vw 0 2vw black;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-bottom: 2.7%;
+}
+
+ul.navigation {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+ul.navigation li a {
+    display: block;
+    width: 11.8vw; 
+    min-width: 100%;
+    text-align: center;
+/*вертикальный отступ задаёт именно шрифт*/
+    font-variant: small-caps;
+    font-family: gabriola;
+    font-size: 2.5vw;/* 40px 2.5vw  2.5vmax*/
+    color: var(--color);
+    text-shadow: .1vw .1vw 1vw black, .1vw -.1vw 1vw black, 0 0 .01vw cyan;
+    transition: 0.3s all;
+}
+
+ul.navigation li a:hover {
+    transform: translateY(-10px);
+    color: gainsboro;
+    text-shadow:  .1vw .1vw 1vw black, .1vw -.1vw 1vw black, 0 0 .01vw black;
+}
+
+/*-----Сайтбар и контенкт---- */
+div.conteiner {
+    display: flex;
+    width: 100%;
+    
+}
+
+.wrap-sb-regbox {
+    width: 15%;
+}
+
+#check {
+    display: none;
+}
+
+ul.sitebar-list li a {
+    display: block;
+    background-color: rgba(40, 40, 40, 0.8);
+    background: -webkit-linear-gradient(top, rgba(7, 7, 7, 0.8) 0%, rgba(7, 7, 7, 0.5) 50%, rgba(7, 7, 7, 0.5) 100%);
+    background: -o-linear-gradient(top, rgba(7, 7, 7, 0.8) 0%, rgba(7, 7, 7, 0.5) 50%, rgba(7, 7, 7, 0.5) 100%);
+    background: linear-gradient(to top, rgba(7, 7, 7, 0.8) 0%, rgba(7, 7, 7, 0.5) 50%, rgba(7, 7, 7, 0.5) 100%);
+   
+    font-family: gabriola;
+    font-size: 1.6vw;/* 30px 1.6vw 1.6vmax*/
+    color: black;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-shadow: 0 -0.1vw 0.1vw darkcyan, .1vw -0.1vw .1vw darkcyan, .1vw 0 .1vw darkcyan, .1vw .1vw .1vw darkcyan, 0 .1vw .1vw darkcyan, -.1vw .1vw .1vw darkcyan, -.1vw 0 .1vw darkcyan, -.1vw -.1vw .1vw darkcyan;
+    border-radius: .4vw;
+    white-space: nowrap;
+    padding: 0.4vw 0 0.4vw 0.5vw; 
+    margin-bottom: 3px;
+    transition: 0.3s all;
+}
+
+ul.sitebar-list li a:hover {
+    transform: scale(1.1);
+    text-shadow: 0 -0.1vw 0.1vw white, 0.1vw -0.1vw 0.1vw white, 0.1vw 0 0.1vw white, 0.1vw 0.1vw 0.1vw white, 0 0.1vw 0.1vw white, -0.1vw 0.1vw 0.1vw white, -0.1vw 0 0.1vw white, -0.1vw -0.1vw 0.1vw white;
+}
+
+/*---Форма входа и регистрации---*/
+.login_link_box {
+    width: 100%;
+    height: 100%;
+}
+
+h5{  
+    text-align: center;
+    margin:1vw 0 0.1vw 0;
+    font-size: 1vw;
+    color:brown;
+    font-family: Conv_Neucha-Regular;
+    letter-spacing: 0.1vw;
+    text-shadow: 0.1vw 0.1vw 0.3vw black, 0.1vw -0.1vw 0.3vw  black, 0 0 2vw blue;
+}
+
+.wrap-form{
+    position: relative;
+    margin-bottom: 2%;    
+}
+
+.forma{ 
+    width: 100%;
+    height: 3.5vw;
+    background-color: rgba(7, 7, 7, 0.8);
+    border:none;  
+    border-bottom: 3px solid darkcyan;
+    padding: 1.2vw 0 0 .6vw;   
+    font-family: Conv_Neucha-Regular;  
+    font-size: 1.3vw;
+    color: lightcoral;
+}
+.wrap-form label{
+    position: absolute; 
+    top:1.5vw;
+    left: 0.7vw;
+    color:grey;
+    font-family: Conv_Neucha-Regular; 
+    font-size: 1.3vw; 
+    transition: 0.2s; 
+    pointer-events: none;/*если убрать команду, то придёться в label использовать for*/
+/*без for или команды выше не имееться возможности нормально кликать по форме. лейбал мешает*/
+    text-shadow: 0.1vw 0.1vw 0.2vw black,  0.1vw 0.1vw 0.2vw black, 0.1vw 0.1vw 3.5vw red;
+}
+
+.forma:focus ~ label,/*в форме при фокусировке задаём анимацию для собержимого лейбла*/
+.forma:valid ~ label{/*в форме проверяеться валидация ввода, работает только с requiblack*/
+    top: -0.1vw;
+    font-size: 1vw;
+    color:grey;
+}
+.forma:focus{
+     border-bottom: 3px solid darkred;
+     transition: 0.5s;
+}
+
+.submit-link, .l-button-reg{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2vw;
+    margin: 1vw 0 0 0;
+    filter: brightness(.9);
+    background: -webkit-linear-gradient(rgba(101,101,101,1) 0%, rgba(89,89,89,1) 4%, rgba(111,111,111,1) 33%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
+    background: -o-linear-gradient(rgba(101,101,101,1) 0%, rgba(89,89,89,1) 4%, rgba(111,111,111,1) 33%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
+    background: linear-gradient(rgba(101,101,101,1) 0%, rgba(89,89,89,1) 4%, rgba(111,111,111,1) 33%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);    border:none;
+    font-family: Conv_Neucha-Regular;   
+    font-size: 1vw;
+    font-weight: 900;
+}
+.submit-link:hover, .l-button-reg:hover{ 
+     filter: drop-shadow(1vw);
+     background: -webkit-linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
+     background: -o-linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
+     background: linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
+}
+.submit-link:active, .l-button-reg:active{  
+    filter: drop-shadow(0 0 0.3vw red);
+    transform: scale(0.98);
+
+}
+
+/*-------отдельный блок регистрации--------*/
+.forma_registration {   
+    position: fixed;
+    width: 16vw;
+    height: 6vh;
+    min-height:  29vw;
+    max-height: 30vw;
+    min-width: 20vw;
+    max-width: 30vw;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform-origin: 300% 200%;
+    transform: rotate(-90deg);
+    transition:rotate, 1s;     
+}
+.wrapreg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    filter: drop-shadow(0 0 0.5vw white);
+    background-image: url(../images/background-reg.jpg);
+    background-size: 170% 100%;
+
+
+}
+.close {
+    position: absolute;
+    top:3px;
+    right: 5px;
+    width: 2vw;
+    height: 2vw;
+    opacity: 0.7;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    content: ' ';
+    height: 100%;
+    width: 0.2vw;
+    left: 50%;
+    background-color: #e9e9f9;
+}
+
+.close:before {  
+    transform: rotate(45deg);
+}
+
+.close:after { 
+    transform: rotate(-45deg);
+}
+#check-2{
+    display:none;
+}
+#check-2:checked ~ .forma_registration {
+    transform: rotate(0deg);
+    transform: translate(0, -50%); 
+}
+h4 {
+    margin: 1vw 0 0 1vw;
+    font-family: Conv_Neucha-Regular;
+    color: var(--color);
+    font-weight: 100;
+    text-shadow: 0 0 1vw black;
+    font-size: 2vmax;
+}
+
+.formreg { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin: 1% 5% 0 5%; 
+    
+}
+
+.wrap-radio{
+    display: flex;
+    justify-content: space-around;
+    height: 2vw;
+}
+.l-gender-radio{
+    display: flex;
+    align-items: center;
+    font-family: Conv_Neucha-Regular;
+    font-size: 1vw;
+    font-weight: 900;   
+    color:grey;
+    text-shadow: 0 0 0.7vw black, 0 0 0.3vw black,0 0 0.3vw black,0 0 0.3vw black,0 0 0.3vw black;
+}
+.l-gender-radio>i{
+    display: inline-block;
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 0.5vw;
+    border: 0.2vw solid rgba(7, 7, 7,1);
+    border-radius: 50%;
+    filter:drop-shadow(0 0 0.1vw darkcyan);
+}
+.l-gender-radio>i:after{
+    content:'';
+    position: absolute;
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 50%;
+    margin: 50% 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .4s;
+} 
+
+.gender{
+    display: none; 
+}
+.gender:checked ~ i:after{
+    content:'';
+    background-color: darkcyan;
+    transform:translate(-50%, -50%) scale(1);
+}
+
+
+.submit-reg{
+    margin-top: 0.9vw;
+    width: 100%;
+    height: 2vw;
+    font-family: Conv_Neucha-Regular; 
+    font-size: 1vw;
+    font-weight: 900;
+    background-color: RGBA(255,160,122, 1);
+    filter: drop-shadow(0 0 0.1vw black);
+    border:none;
+}
+.submit-reg:hover{
+     filter: drop-shadow(0 0 0.1vw);
+     background: linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
+
+     
+}
+.submit-reg:active{
+    background: linear-gradient(180deg, rgba(107,231,163,1) 4%, rgba(69,180,134,1) 10%, rgba(60,170,132,1) 36%, rgba(39,139,92,1) 89%, rgba(24,48,38,1) 97%, rgba(49,64,60,1) 99%);
+}
+
+/*-------Контент-------*/
+
+section.content {
+    width: 84%;
+    font-family: "MV BOLI", sans-serif;
+    font-size: 2vw;
+    background-color: rgba(13, 12, 12, 0.4);
+    padding: 2vw;
+    margin-left: 10px;
+    
+}
+
+.content h2 {
+    font-size: 3vw;
+    color: #CF605D;
+    text-shadow: 0 0 10px black;
+}
+
+.content {
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: #8c8c8c;
+    text-shadow: 0 0 2px black
+    
+}
+
+footer {
+    position: fixed;
+
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    height: 45px;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(13, 12, 12, 0.4);
+    filter: drop-shadow(0 -3px 20px rgba(155, 132, 132, 0.47))drop-shadow(0 -3px 50px rgba(159, 127, 129, 0.32));
+    background: rgba(13, 12, 12, 0.9);
+    padding: 10px 0;
+    
+}
+
+.footer__icon img {
+    width: 30px;
+    margin-left: 10%;
+    transition: all 0.2s ease;
+}
+
+.footer__icon img:hover {
+    transform: scale(4) rotate(-10deg) translateY(-10px);
+    filter: drop-shadow(0 0 10px blue);
+
+}

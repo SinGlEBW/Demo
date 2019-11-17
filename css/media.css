@@ -1,10 +1,8 @@
 @media screen and (max-width:1375px) {
-    header > h1 {
-        font-size: 40px;
-    }
+  
 
     ul.navigation li a {
-        width: 5em;
+        width: ;
         font-size: 30px;
     }
 
@@ -13,31 +11,9 @@
         font-size: 24px;
     }
 
-    /*__REGISTRATION__*/
+    /*__Личный кабинет__*/
 
-    span {
-        font-size: 19px;
-    }
-
-    input {
-        font-size: 10px;
-        margin-bottom: 1px;
-    }
-
-    input[type="checkbox"] {
-        width: 10px;
-
-    }
-
-    label {
-        width: 100%;
-        font-size: 11px;
-    }
-    .forma_registration {
-
-        width: 25vw;
-        height: 40vh;
-    }
+    
 
     /*___CONTENT___*/
     section.content {
@@ -65,9 +41,7 @@
     left: 2%;
     right: 2%;
 }
-    header > h1 {
-        font-size: 30px;
-    }
+   
 
     ul.navigation li a {
         width: 5em;
@@ -77,32 +51,6 @@
     /* ___SELECT: NAV & CONTENT___ */
     ul.ul_list li a {
         font-size: 17px;
-    }
-
-    /*___REGISTRATION___*/
-    span {
-        font-size: 13px;
-    }
-
-    input {
-        font-size: 7px;
-    }
-
-    input[type="checkbox"] {
-        width: 7px;
-        margin: 0;
-    }
-
-    label {
-        width: 100%;
-        font-size: 8px;
-        padding-top: 2px;
-    }
-
-    .forma_registration {
-
-        width: 35vw;
-        height: 22vh;
     }
 
     /*_____CONTENT____*/
@@ -133,9 +81,7 @@
     }
     
 
-    header > h1 {
-        font-size: 30px;
-    }
+   
 
     ul.navigation li a {
         width: 5em;
@@ -147,30 +93,6 @@
         font-size: 17px;
     }
 
-    /*___REGISTRATION___*/
-    span {
-        font-size: 13px;
-    }
-
-    input {
-        font-size: 7px;
-    }
-
-    input[type="checkbox"] {
-        width: 7px;
-        margin: 0;
-    }
-
-    label {
-        width: 100%;
-        font-size: 8px;
-        padding-top: 2px;
-    }
-    .forma_registration {
-
-        width: 35vw;
-        height: 25vh;
-    }
     .al-err{
 
         font-size: 1.5vmax;
@@ -205,9 +127,7 @@
     }
 
 
-    header > h1 {
-        font-size: 30px;
-    }
+   
 
     ul.navigation li a {
         width: 5em;
@@ -257,35 +177,9 @@
         font-size: 17px;
     }
 
-    /*___REGISTRATION___*/
-
-
-
-    .forma_registration {
-
-        width: 35vw;
-        height: 30vh;
-    }
-
-    span {
-        font-size: 13px;
-    }
-
-    input {
-        font-size: 7px;
-    }
-
-    input[type="checkbox"] {
-        width: 7px;
-        margin: 0;
-    }
-
-    label {
-        width: 100%;
-        font-size: 8px;
-        padding-top: 2px;
-    }
-
+ /*------Личный кабинет------*/
+    
+    
     /*_____CONTENT____*/
     section.content {
         font-size: 17px;
@@ -309,12 +203,6 @@
 
     }
 
-    header > h1 {
-        justify-content: center;
-        font-size: 8vw;
-        color: black;
-        font-family: cursive;
-    }
 
     header > img {
         width: 26%;
@@ -330,14 +218,10 @@
     ul.navigation li a {
         width: 4.8em;
         font-size: 20px;
-        
-    }
-    .forma_registration {
-
-        width: 60vw;
-        height: 30vh;
     }
 
+    
+    
     section.content {
         width: 95%;
         background-color: rgba(13, 12, 12, 0.4);
@@ -352,13 +236,6 @@
 
     }
 
-    header > h1 {
-        justify-content: center;
-        font-size: 8vw;
-        color: black;
-        font-family: cursive;
-    }
-
     header > img {
         width: 26%;
     }
@@ -366,24 +243,18 @@
     ul.navigation {
         display: flex;
         flex-wrap: wrap;
-
-
     }
 
+    
     ul.navigation li a {
         width: 4.8em;
         font-size: 20px;
         
     }
-    .forma_registration {
 
-        width: 60vw;
-        height: 35vh;
-    }
-.alert{
-
-    font-size: 3em;
-}
+    
+    
+    
     section.content {
         width: 95%;
         background-color: rgba(13, 12, 12, 0.4);
