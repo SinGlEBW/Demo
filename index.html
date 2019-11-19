@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<meta charset="UTF-8">
 	<title>Documen</title>
 	<link rel="stylesheet" href="css/normalize.css">
@@ -46,41 +47,41 @@
 						<li><a href="">Страница 6</a> </li>
 					</ul>	
                     
-					<div class="login_link_box"><!-- ___BOX OPEN_____ -->
+					<div class="login_link_box"><!--Личный кабинет-->
                    
-					   <h5> Личный кабинет</h5>
-						<form action="form_reg.php" method="post">
-				            <div class="wrap-form"><input class="forma" type="text" name="login" required ><label>Введите логин</label></div>
-				         	<div class="wrap-form"><input class="forma" type="password" name="password" required ><label>Введите пароль</label></div>
-							<input class="submit-link" type = "submit" name = "submit_login" value="Вход">																								
-						</form>
+				        <h5> Личный кабинет</h5>
+                        <form action="form_reg.php" method="post">
+                            <div class="wrap-form"><input class="forma" type="text" name="login" required ><label>Введите логин</label></div>
+                            <div class="wrap-form"><input class="forma" type="password" name="password" required ><label>Введите пароль</label></div>
+                            <input class="submit-link" type = "submit" name = "submit_login" value="Вход">																								
+                        </form>
 						
-						<input id="check-2" type="checkbox" <?php echo $GLOBALS['activated'];?> ><!--Кнопка для регистрации -->
-						<label class="l-button-reg" for="check-2">Регистрация</label>
+						<input id="check-2" type="checkbox" <?php echo $GLOBALS['activated'];?> > <!--Кнопка для регистрации -->
+						<label class="l-button-reg" for="check-2">Регистрация</label>   <!--Кнопка сделана из лейбла -->
 						 
 								
-								<div class="forma_registration">    
-                                   <div class="wrapreg"> 
-                                       <label for="check-2"><div class="close"></div></label> 
-                                      <h4>Регистрация</h4>
-                                     
-                                        <form  class="formreg" action="form_reg.php" method="post">
-                                          <input class="forma" class="logreg" type="text" name="logreg"  placeholder="Логин:<?php echo $GLOBALS['errors'][0];?>">
-                                          <input class="forma" class="emailreg" type="email" name="emailreg"  placeholder="Email:<?php echo $GLOBALS['errors'][2];?>">
-                                          <input class="forma" class="agereg" type="date" name="agereg" min="1950-01-01" max="2020-01-01">
-                                         
-                                          <div class="wrap-radio">
-                                            <label class="l-gender-radio"><input class="gender" type="radio" name="radio" checked><i></i>Мужской</label>
-                                            <label class="l-gender-radio"><input class="gender" type="radio" name="radio"><i></i>Женский</label>
-                                          </div>
-                                          <input class="forma" class="passreg" type="password" name="passreg"  placeholder="Пароль:<?php echo $GLOBALS['errors'][1];?>">
-                                          <input class="forma" class="repeat-passreg" type="password" name="repeat-passreg"  placeholder="Повторите пароль:<?php echo $GLOBALS['errors'][3];?>">
-                                          <input class="submit-reg" type="submit" name="submit_reg" value="Зарегистрироваться" >
-                                        </form>
-                                         
-                                   		
+                        <div class="forma_registration">    
+                            <div class="wrapreg"> 
+                               <label for="check-2"><div class="close"></div></label> 
+                               <h4>Регистрация</h4>
+                            
+                               <form  class="formreg" action="form_reg.php" method="post">
+                                    <input class="forma" class="logreg" type="text" name="logreg"  placeholder="Логин:<?php echo $GLOBALS['errors'][0];?>">
+                                    <input class="forma" class="emailreg" type="email" name="emailreg"  placeholder="Email:<?php echo $GLOBALS['errors'][2];?>">
+                                    <input class="forma" class="agereg" type="date" name="agereg" min="1950-01-01" max="2020-01-01">
+
+                                    <div class="wrap-radio">
+                                        <label class="l-gender-radio"><input class="gender" type="radio" name="radio" checked><i></i>Мужской</label>
+                                        <label class="l-gender-radio"><input class="gender" type="radio" name="radio"><i></i>Женский</label>
                                     </div>
-                                </div>						
+                                    <input class="forma" class="passreg" type="password" name="passreg"  placeholder="Пароль:<?php echo $GLOBALS['errors'][1];?>">
+                                    <input class="forma" class="repeat-passreg" type="password" name="repeat-passreg"  placeholder="Повторите пароль:<?php echo $GLOBALS['errors'][3];?>">
+                                    <input class="submit-reg" type="submit" name="submit_reg" value="Зарегистрироваться" >
+                                </form>
+
+
+                            </div>
+                        </div>						
 					</div>
 			</section>
             

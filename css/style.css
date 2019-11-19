@@ -67,8 +67,7 @@ ul.navigation li a:hover {
 /*-----Сайтбар и контенкт---- */
 div.conteiner {
     display: flex;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .wrap-sb-regbox {
@@ -90,9 +89,9 @@ ul.sitebar-list li a {
     font-size: 1.6vw;/* 30px 1.6vw 1.6vmax*/
     color: black;
     letter-spacing: 3px;
-    font-weight: 700;
+    font-weight: 900;
     text-shadow: 0 -0.1vw 0.1vw darkcyan, .1vw -0.1vw .1vw darkcyan, .1vw 0 .1vw darkcyan, .1vw .1vw .1vw darkcyan, 0 .1vw .1vw darkcyan, -.1vw .1vw .1vw darkcyan, -.1vw 0 .1vw darkcyan, -.1vw -.1vw .1vw darkcyan;
-    border-radius: .4vw;
+    border-radius: 0.4vw;
     white-space: nowrap;
     padding: 0.4vw 0 0.4vw 0.5vw; 
     margin-bottom: 3px;
@@ -115,7 +114,7 @@ h5{
     margin:1vw 0 0.1vw 0;
     font-size: 1vw;
     color:brown;
-    font-family: Conv_Neucha-Regular;
+    font-family: Neucha-Regular;
     letter-spacing: 0.1vw;
     text-shadow: 0.1vw 0.1vw 0.3vw black, 0.1vw -0.1vw 0.3vw  black, 0 0 2vw blue;
 }
@@ -130,18 +129,19 @@ h5{
     height: 3.5vw;
     background-color: rgba(7, 7, 7, 0.8);
     border:none;  
-    border-bottom: 3px solid darkcyan;
+    border-bottom: 0.2vw solid darkcyan;
     padding: 1.2vw 0 0 .6vw;   
-    font-family: Conv_Neucha-Regular;  
+    font-family: Neucha-Regular;  
     font-size: 1.3vw;
     color: lightcoral;
 }
+
 .wrap-form label{
     position: absolute; 
     top:1.5vw;
     left: 0.7vw;
     color:grey;
-    font-family: Conv_Neucha-Regular; 
+    font-family: Neucha-Regular; 
     font-size: 1.3vw; 
     transition: 0.2s; 
     pointer-events: none;/*если убрать команду, то придёться в label использовать for*/
@@ -155,8 +155,9 @@ h5{
     font-size: 1vw;
     color:grey;
 }
+
 .forma:focus{
-     border-bottom: 3px solid darkred;
+     border-bottom: 0.2vw solid darkred;
      transition: 0.5s;
 }
 
@@ -171,20 +172,21 @@ h5{
     background: -webkit-linear-gradient(rgba(101,101,101,1) 0%, rgba(89,89,89,1) 4%, rgba(111,111,111,1) 33%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
     background: -o-linear-gradient(rgba(101,101,101,1) 0%, rgba(89,89,89,1) 4%, rgba(111,111,111,1) 33%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
     background: linear-gradient(rgba(101,101,101,1) 0%, rgba(89,89,89,1) 4%, rgba(111,111,111,1) 33%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);    border:none;
-    font-family: Conv_Neucha-Regular;   
+    font-family: Neucha-Regular;   
     font-size: 1vw;
     font-weight: 900;
 }
+
 .submit-link:hover, .l-button-reg:hover{ 
      filter: drop-shadow(1vw);
      background: -webkit-linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
      background: -o-linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
      background: linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
 }
+
 .submit-link:active, .l-button-reg:active{  
     filter: drop-shadow(0 0 0.3vw red);
     transform: scale(0.98);
-
 }
 
 /*-------отдельный блок регистрации--------*/
@@ -201,10 +203,11 @@ h5{
     right: 0;
     margin: 0 auto;
     top: 50%;
-    transform-origin: 300% 200%;
-    transform: rotate(-90deg);
-    transition:rotate, 1s;     
+    transform-origin: 200% 100%;
+    transform:  scale(0) rotate(-90deg);
+    transition:all, 1s;     
 }
+
 .wrapreg {
     position: absolute;
     width: 100%;
@@ -213,9 +216,8 @@ h5{
     filter: drop-shadow(0 0 0.5vw white);
     background-image: url(../images/background-reg.jpg);
     background-size: 170% 100%;
-
-
 }
+
 .close {
     position: absolute;
     top:3px;
@@ -223,6 +225,10 @@ h5{
     width: 2vw;
     height: 2vw;
     opacity: 0.7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close:hover {
@@ -233,29 +239,27 @@ h5{
 .close:after {
     position: absolute;
     content: ' ';
-    height: 100%;
-    width: 0.2vw;
-    left: 50%;
+    width: 100%;
+    height: 2px;
     background-color: #e9e9f9;
 }
 
-.close:before {  
+.close:before{
     transform: rotate(45deg);
 }
-
-.close:after { 
+.close:after{  
     transform: rotate(-45deg);
 }
+
 #check-2{
     display:none;
 }
 #check-2:checked ~ .forma_registration {
-    transform: rotate(0deg);
-    transform: translate(0, -50%); 
+    transform: scale(1) translate(0, -50%) rotate(0deg);
 }
 h4 {
     margin: 1vw 0 0 1vw;
-    font-family: Conv_Neucha-Regular;
+    font-family: Neucha-Regular;
     color: var(--color);
     font-weight: 100;
     text-shadow: 0 0 1vw black;
@@ -267,7 +271,6 @@ h4 {
     flex-direction: column;
     justify-content: space-between; 
     margin: 1% 5% 0 5%; 
-    
 }
 
 .wrap-radio{
@@ -275,15 +278,17 @@ h4 {
     justify-content: space-around;
     height: 2vw;
 }
+
 .l-gender-radio{
     display: flex;
     align-items: center;
-    font-family: Conv_Neucha-Regular;
+    font-family: Neucha-Regular;
     font-size: 1vw;
     font-weight: 900;   
     color:grey;
     text-shadow: 0 0 0.7vw black, 0 0 0.3vw black,0 0 0.3vw black,0 0 0.3vw black,0 0 0.3vw black;
 }
+
 .l-gender-radio>i{
     display: inline-block;
     position: relative;
@@ -294,6 +299,7 @@ h4 {
     border-radius: 50%;
     filter:drop-shadow(0 0 0.1vw darkcyan);
 }
+
 .l-gender-radio>i:after{
     content:'';
     position: absolute;
@@ -308,44 +314,42 @@ h4 {
 .gender{
     display: none; 
 }
+
 .gender:checked ~ i:after{
     content:'';
     background-color: darkcyan;
     transform:translate(-50%, -50%) scale(1);
 }
 
-
 .submit-reg{
     margin-top: 0.9vw;
     width: 100%;
     height: 2vw;
-    font-family: Conv_Neucha-Regular; 
+    font-family: Neucha-Regular; 
     font-size: 1vw;
     font-weight: 900;
     background-color: RGBA(255,160,122, 1);
     filter: drop-shadow(0 0 0.1vw black);
     border:none;
 }
+
 .submit-reg:hover{
      filter: drop-shadow(0 0 0.1vw);
-     background: linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);
-
-     
+     background: linear-gradient(rgba(101,101,101,1) 0%, rgba(65,65,65,1) 2%, rgba(101,101,101,1) 91%, rgba(65,65,65,1) 96%, rgba(101,101,101,1) 100%);    
 }
+
 .submit-reg:active{
     background: linear-gradient(180deg, rgba(107,231,163,1) 4%, rgba(69,180,134,1) 10%, rgba(60,170,132,1) 36%, rgba(39,139,92,1) 89%, rgba(24,48,38,1) 97%, rgba(49,64,60,1) 99%);
 }
 
 /*-------Контент-------*/
-
 section.content {
     width: 84%;
     font-family: "MV BOLI", sans-serif;
     font-size: 2vw;
     background-color: rgba(13, 12, 12, 0.4);
     padding: 2vw;
-    margin-left: 10px;
-    
+    margin-left: 10px;  
 }
 
 .content h2 {
@@ -358,33 +362,29 @@ section.content {
     font-weight: bolder;
     font-variant: small-caps;
     color: #8c8c8c;
-    text-shadow: 0 0 2px black
-    
+    text-shadow: 0 0 0.3vw black  
 }
 
 footer {
     position: fixed;
-
     left: 10%;
     right: 10%;
     bottom: 0;
-    height: 45px;
-    border-radius: 20px 20px 0 0;
+    height: 2.5vw;
+    border-radius: 1vw 1vw 0 0;
     background-color: rgba(13, 12, 12, 0.4);
-    filter: drop-shadow(0 -3px 20px rgba(155, 132, 132, 0.47))drop-shadow(0 -3px 50px rgba(159, 127, 129, 0.32));
+    filter: drop-shadow(0 -3px 1vw rgba(155, 132, 132, 0.47))drop-shadow(0 -3px 50px rgba(159, 127, 129, 0.32));
     background: rgba(13, 12, 12, 0.9);
-    padding: 10px 0;
-    
+    padding: 0.5vw 0;   
 }
 
 .footer__icon img {
-    width: 30px;
+    width: 1.5vw;
     margin-left: 10%;
     transition: all 0.2s ease;
 }
 
 .footer__icon img:hover {
     transform: scale(4) rotate(-10deg) translateY(-10px);
-    filter: drop-shadow(0 0 10px blue);
-
+    filter: drop-shadow(0 0 1vw blue);
 }
