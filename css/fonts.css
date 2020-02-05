@@ -16,7 +16,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'Gabriola';
   src: url('../fonts/Gabriola/Gabriola.eot');
@@ -30,12 +29,12 @@
 }
 
 @font-face {
-  font-family: 'MV BOLI';
-  src: url('../fonts/mvboli.eot');
-  src: url('../fonts/MVBoli/MVBoli.svg#MVBoli') format('svg'),
-       url('../fonts/MVBoli.ttf') format('truetype'),
-       url('../fonts/MVBoli.woff') format('woff'),
-       url('../fonts/mvboli.woff2') format('woff2');
+  font-family: 'MvBoli';
+  src: url('../fonts/MVBoli/MVBoli.eot');
+  src: url('../fonts/MVBoli/MVBoli/MVBoli.svg#MVBoli') format('svg'),
+       url('../fonts/MVBoli/MVBoli.ttf') format('truetype'),
+       url('../fonts/MVBoli/MVBoli.woff') format('woff'),
+       url('../fonts/MVBoli/MVBoli.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'KellySlab-Regular';
+  src: url('KellySlab-Regular.svg#KellySlab-Regular') format('svg'),
+       url('KellySlab-Regular.ttf') format('truetype'),
+       url('KellySlab-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kelly-slab_allfont_ru';
+  src: url('kelly-slab_allfont_ru.eot');
+  src: url('kelly-slab_allfont_ru.eot?#iefix') format('embedded-opentype'),
+       url('kelly-slab_allfont_ru.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

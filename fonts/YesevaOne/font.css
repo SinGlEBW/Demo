@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'YesevaOne';
+  src: url('YesevaOne.svg#YesevaOne') format('svg'),
+       url('YesevaOne.ttf') format('truetype'),
+       url('YesevaOne.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'yeseva-one_allfont_ru';
+  src: url('yeseva-one_allfont_ru.eot');
+  src: url('yeseva-one_allfont_ru.eot?#iefix') format('embedded-opentype'),
+       url('yeseva-one_allfont_ru.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
